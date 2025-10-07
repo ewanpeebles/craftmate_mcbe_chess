@@ -1,0 +1,46 @@
+{
+	"type": "minecraftBedrock",
+	"name": "CraftMate - Minecraft Chess",
+	"namespace": "cm",
+	"authors": [
+		"ModHaxor"
+	],
+	"targetVersion": "1.21.90",
+	"description": "A mod that creates fully functional Chess in Minecraft! See README.md for details.",
+	"experimentalGameplay": {
+		"creationOfCustomBiomes": false,
+		"upcomingCreatorFeatures": false,
+		"experimentalCreatorCameraFeatures": true,
+		"enableGameTestFramework": true,
+		"dataDrivenJigsawStructures": false,
+		"renderDragonFeatures": false,
+		"educationEdition": false
+	},
+	"bdsProject": false,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "CraftMate - Minecraft Chess"
+				}
+			]
+		]
+	}
+}
